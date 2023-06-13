@@ -1,0 +1,246 @@
+/* Magazine Block */
+@media (min-width: 960px) {
+  .fd-rr {
+    flex-direction: row-reverse;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+.m-block {
+  margin-top: 30px;
+  row-gap: 44px;
+}
+.m-title {
+  margin-bottom: 24px;
+  font-size: 30px;
+  line-height: 1;
+  color: #333b4e;
+}
+.m-title-second {
+  margin-bottom: 3%;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+}
+
+.m-adress {
+  font-size: 15px;
+  color: #333b4e;
+}
+.m-clock,
+.m-phone {
+  margin-bottom: 12px;
+  padding-left: 38px;
+  font-size: 15px;
+  color: #333b4e;
+}
+
+.m-phone {
+  font-size: 15px;
+  margin-bottom: 12px;
+  padding-left: 38px;
+  background: url(.//img/phone_ico.png) no-repeat scroll left center;
+}
+.m-clock {
+  font-size: 15px;
+  margin-bottom: 12px;
+  padding-left: 38px;
+  background: url(.//img/clock.png) no-repeat scroll left center;
+}
+
+.m-info {
+  margin-top: 40px;
+}
+
+.mapspanel {
+  width: 100%;
+  height: 100%;
+}
+.mapsitem {
+  width: 80px;
+  display: inline-block;
+  margin-right: 4%;
+  text-align: center;
+}
+.mapsitem>a>img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+.mapsitem>a>span {
+  display: flex;
+  margin-top: 2px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.m-gallery {
+  padding-left: 14px;
+}
+.m-gallery img {
+  max-width: 100%;
+  cursor: pointer;
+}
+.m-gallery>div {
+  margin: 0;
+  padding: 5px;
+}
+.swiperMGallery {
+  aspect-ratio: 38 / 27;
+}
+.swiperMGallery .swiper-button-next:after,
+.swiperMGallery .swiper-button-prev:after {
+  font-size: 30px;
+  color: #fff;
+}
+
+.tab-content>.active {
+  opacity: 1;
+}
+.m-tabs .nav-tabs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+}
+.m-tabs .tab-content {
+  width: 100%;
+  height: 360px;
+  max-height: 360px;
+}
+.tab-pane {
+  width: 100%;
+  height: 360px;
+}
+.tab-pane img {
+  margin: auto;
+  display: block;
+}
+#shop_on_map {
+  width: 100%;
+  height: 360px;
+  max-height: 100%;
+}
+#shop_on_map2 {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+#show_on_map ymaps {
+  width: 100%;
+}
+.m-tabs .nav-tabs li {
+  width: 32%;
+  aspect-ratio: 64 / 42;
+}
+.m-block .way_type {
+  margin-top: 36px;
+  margin-bottom: 28px;
+}
+.m-block .way_type p {
+  font-size: 14px;
+  padding-left: 27px;
+}
+.m-block .man {
+  background: url('../img/man.png') no-repeat scroll 0 0;
+}
+
+
+/* Manager Block */
+.manager-card {
+  display: inline-block;
+  margin: auto;
+  float: none !important;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.manager-card-wrapper {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.manager-card-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.manager-card-heading p {
+  margin-bottom: 4px;
+}
+.manager-card-body {
+  padding: 15px;
+}
+.manager-card-body img {
+  display: block;
+  margin: 10px auto;
+}
+.list-group {
+  list-style: none;
+  margin: 0;padding: 0;
+}
+.list-group-item {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+}
+.list-group-item:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.manager-card input {
+    display: block;
+    margin: 5px auto;
+    padding: 5px 10px;
+    font-size: 16px;
+    position: relative;
+    color: #fff;
+    border: medium none;
+    background-color: #ba1a32;
+}
+
+
+
+
+.visible-xs, .visible-sm, .visible-md, .visible-lg {
+  display: none !important;
+}
+@media (max-width: 991px) { 
+  .visible-md {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) { 
+  .hidden-xs {
+    display: none !important;
+  }
+  .visible-xs {
+    display: block !important;
+  }
+}
+@media (max-width: 576px) {
+  .m-title {
+    font-size: 26px;
+  }
+  .m-tabs .tab-content {
+    height: 260px;
+    max-height: 260px;
+  }
+  .tab-pane {
+    height: 260px;
+  }
+  #shop_on_map {
+    height: 260px;
+  }
+}
